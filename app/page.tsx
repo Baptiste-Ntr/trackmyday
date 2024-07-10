@@ -1,17 +1,51 @@
-import { createClient } from '@/utils/supabase/server'
-import { cookies } from 'next/headers'
+'use client'
 
-export default async function Page() {
-  const cookieStore = cookies()
-  const supabase = createClient(cookieStore)
+import { createClient } from '@/utils/supabase/client';
+import { isSessionLogin } from '@/utils/supabase/session';
+import { useRouter } from 'next/navigation'
+import { useEffect, useState } from 'react';
 
-  const { data: todos } = await supabase.from('todos').select()
+export default function Page() {
+
+  const [isLogin, setIsLogin] = useState<boolean | undefined>(false)
+
+  const router = useRouter();
+
+  const signOut = async () => {
+    try {
+      const fetchSignout = await fetch('/auth/signout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+
+      if (fetchSignout.status === 200) {
+        router.push('/login')
+      }
+
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  useEffect(() => {
+    const checkLogin = async () => {
+      const login = await isSessionLogin()
+      setIsLogin(login)
+    }
+    checkLogin()
+
+  })
 
   return (
-    <ul>
-      {todos?.map((todo) => (
-        <li>{todo}</li>
-      ))}
-    </ul>
+    !isLogin ? (
+      <>
+        <input type='button' value={'login'} onClick={() => router.push('/login')} />
+        <input type='button' value={'register'} onClick={() => router.push('/register')} />
+      </>
+    ) : (
+      <input type='button' value={'logout'} onClick={() => signOut()} />
+    )
   )
 }

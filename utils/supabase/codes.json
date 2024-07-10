@@ -1,0 +1,226 @@
+[
+    {
+        "bad_code_verifier": {
+            "en": "Returned from the PKCE flow where the provided code verifier does not match the expected one. Indicates a bug in the implementation of the client library.",
+            "fr": "Retourné du flux PKCE où le vérificateur de code fourni ne correspond pas à celui attendu. Indique un bogue dans l'implémentation de la bibliothèque cliente."
+        }
+    },
+    {
+        "bad_json": {
+            "en": "Usually used when the HTTP body of the request is not valid JSON.",
+            "fr": "Généralement utilisé lorsque le corps HTTP de la requête n'est pas un JSON valide."
+        }
+    },
+    {
+        "bad_jwt": {}
+    },
+    {
+        "bad_oauth_callback": {}
+    },
+    {
+        "bad_oauth_state": {}
+    },
+    {
+        "captcha_failed": {}
+    },
+    {
+        "conflict": {}
+    },
+    {
+        "email_conflict_identity_not_deletable": {}
+    },
+    {
+        "email_exists": {
+            "fr": "L'adresse e-mail existe déjà."
+        }
+    },
+    {
+        "email_not_confirmed": {
+            "fr": "L'adresse e-mail n'est pas confirmée."
+        }
+    },
+    {
+        "email_provider_disabled": {}
+    },
+    {
+        "flow_state_expired": {}
+    },
+    {
+        "flow_state_not_found": {}
+    },
+    {
+        "identity_already_exists": {}
+    },
+    {
+        "identity_not_found": {
+            "fr": "Identité non trouvée."
+        }
+    },
+    {
+        "insufficient_aal": {}
+    },
+    {
+        "invite_not_found": {}
+    },
+    {
+        "manual_linking_disabled": {}
+    },
+    {
+        "mfa_challenge_expired": {}
+    },
+    {
+        "mfa_factor_name_conflict": {}
+    },
+    {
+        "mfa_factor_not_found": {}
+    },
+    {
+        "mfa_ip_address_mismatch": {}
+    },
+    {
+        "mfa_verification_failed": {}
+    },
+    {
+        "mfa_verification_rejected": {}
+    },
+    {
+        "no_authorization": {
+            "fr": "Pas d'autorisation."
+        }
+    },
+    {
+        "not_admin": {
+            "fr": "Pas administrateur."
+        }
+    },
+    {
+        "oauth_provider_not_supported": {}
+    },
+    {
+        "otp_disabled": {}
+    },
+    {
+        "otp_expired": {}
+    },
+    {
+        "over_email_send_rate_limit": {
+            "fr": "Limite de taux d'envoi d'e-mails dépassée."
+        }
+    },
+    {
+        "over_request_rate_limit": {
+            "fr": "Limite de taux de demande dépassée."
+        }
+    },
+    {
+        "over_sms_send_rate_limit": {
+            "fr": "Limite de taux d'envoi de SMS dépassée."
+        }
+    },
+    {
+        "phone_exists": {
+            "fr": "Le numéro de téléphone existe déjà."
+        }
+    },
+    {
+        "phone_not_confirmed": {}
+    },
+    {
+        "phone_provider_disabled": {}
+    },
+    {
+        "provider_disabled": {}
+    },
+    {
+        "provider_email_needs_verification": {}
+    },
+    {
+        "reauthentication_needed": {}
+    },
+    {
+        "reauthentication_not_valid": {}
+    },
+    {
+        "same_password": {
+            "fr": "Le même mot de passe."
+        }
+    },
+    {
+        "saml_assertion_no_email": {}
+    },
+    {
+        "saml_assertion_no_user_id": {}
+    },
+    {
+        "saml_entity_id_mismatch": {}
+    },
+    {
+        "saml_idp_already_exists": {}
+    },
+    {
+        "saml_idp_not_found": {}
+    },
+    {
+        "saml_metadata_fetch_failed": {}
+    },
+    {
+        "saml_provider_disabled": {}
+    },
+    {
+        "saml_relay_state_expired": {}
+    },
+    {
+        "saml_relay_state_not_found": {}
+    },
+    {
+        "session_not_found": {
+            "fr": "Session non trouvée."
+        }
+    },
+    {
+        "signup_disabled": {}
+    },
+    {
+        "single_identity_not_deletable": {}
+    },
+    {
+        "sms_send_failed": {}
+    },
+    {
+        "sso_domain_already_exists": {}
+    },
+    {
+        "sso_provider_not_found": {}
+    },
+    {
+        "too_many_enrolled_mfa_factors": {}
+    },
+    {
+        "unexpected_audience": {}
+    },
+    {
+        "unexpected_failure": {}
+    },
+    {
+        "user_already_exists": {}
+    },
+    {
+        "user_banned": {}
+    },
+    {
+        "user_not_found": {
+            "fr": "Utilisateur non trouvé."
+        }
+    },
+    {
+        "user_sso_managed": {}
+    },
+    {
+        "validation_failed": {}
+    },
+    {
+        "weak_password": {
+            "fr": "Mot de passe faible."
+        }
+    }
+]
